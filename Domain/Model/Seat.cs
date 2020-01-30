@@ -5,19 +5,18 @@ namespace Booking1.Domain.Model
     public class Seat
     {
         private int id;
-        [ForeignKey("Salon    ")]
-        private int salon_id;
-        private int x_coordinate;
-        private int y_coordinate;
+        private int salonId;
+        private int xCoordinate;
+        private int yCoordinate;
         private Salon salon;
 
 
         public Seat(int id, int salonId, int xCoordinate, int yCoordinate, Salon salon)
         {
             this.id = id;
-            salon_id = salonId;
-            x_coordinate = xCoordinate;
-            y_coordinate = yCoordinate;
+            this.salonId = salonId;
+            this.xCoordinate = xCoordinate;
+            this.yCoordinate = yCoordinate;
             this.salon = salon;
         }
 
@@ -29,20 +28,20 @@ namespace Booking1.Domain.Model
 
         public int SalonId
         {
-            get => salon_id;
-            set => salon_id = value;
+            get => salonId;
+            set => salonId = value;
         }
 
         public int XCoordinate
         {
-            get => x_coordinate;
-            set => x_coordinate = value;
+            get => xCoordinate;
+            set => xCoordinate = value;
         }
 
         public int YCoordinate
         {
-            get => y_coordinate;
-            set => y_coordinate = value;
+            get => yCoordinate;
+            set => yCoordinate = value;
         }
 
         public Salon Salon

@@ -7,8 +7,8 @@ namespace Booking1.Domain.Model
     {
         private string name;
         private int id;
-        private int seat_width;
-        private int seat_height;
+        private int seatWidth;
+        private int seatHeight;
       
 
        
@@ -17,8 +17,8 @@ namespace Booking1.Domain.Model
         {
             this.name = name;
             this.id = id;
-            seat_width = seatWidth;
-            seat_height = seatHeight;
+            this.seatWidth = seatWidth;
+            this.seatHeight = seatHeight;
         }
 
         public string Name
@@ -35,14 +35,14 @@ namespace Booking1.Domain.Model
 
         public int SeatWidth
         {
-            get => seat_width;
-            set => seat_width = value;
+            get => seatWidth;
+            set => seatWidth = value;
         }
 
         public int SeatHeight
         {
-            get => seat_height;
-            set => seat_height = value;
+            get => seatHeight;
+            set => seatHeight = value;
         }
 
     }

@@ -8,25 +8,24 @@ namespace Booking1.Domain.Model
         
 
         private string title;
-        private DateTime start_time;
-        private DateTime end_time;
+        private DateTime startTime;
+        private DateTime endTime;
         private string summary;
         private float price;
         private int id;
-        [ForeignKey("Salon")]
-        private int salon_id;
+        private int salonId;
         private Salon salon;
 
 
         public Show(string title, DateTime startTime, DateTime endTime, string summary, float price, int id, int salonId, Salon salon)
         {
             this.title = title;
-            start_time = startTime;
-            end_time = endTime;
+            this.startTime = startTime;
+            this.endTime = endTime;
             this.summary = summary;
             this.price = price;
             this.id = id;
-            salon_id = salonId;
+            this.salonId = salonId;
             this.salon = salon;
         }
 
@@ -39,14 +38,14 @@ namespace Booking1.Domain.Model
 
         public DateTime StartTime
         {
-            get => start_time;
-            set => start_time = value;
+            get => startTime;
+            set => startTime = value;
         }
 
         public DateTime EndTime
         {
-            get => end_time;
-            set => end_time = value;
+            get => endTime;
+            set => endTime = value;
         }
 
         public string Summary
@@ -69,8 +68,8 @@ namespace Booking1.Domain.Model
 
         public int SalonId
         {
-            get => salon_id;
-            set => salon_id = value;
+            get => salonId;
+            set => salonId = value;
         }
 
         public Salon Salon
