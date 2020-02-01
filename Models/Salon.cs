@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-namespace Booking1.Domain.Model
+namespace Domain.Model
 {
     public class Salon
     {

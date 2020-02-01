@@ -1,9 +1,9 @@
 using System;
-using Booking1.Domain.Model;
+using Domain.Model;
 using Microsoft.EntityFrameworkCore;
 
 
-namespace Booking1.Persistence.Context
+namespace Persistence.Context
 {
     public class AppDbContext : DbContext
     {

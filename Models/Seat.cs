@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Booking1.Domain.Model
+namespace Domain.Model
 {
     public class Seat
     {
