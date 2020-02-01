@@ -1,12 +1,22 @@
-namespace Models
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace Booking1.Domain.Model
 {
     public class Ticket
     {
-        public int Id { get; set; }
         public int UserId { get; set; }
-        public int SeatId { get; set; }
-        public Seat Seat  { get; set; }        
-        public int ShowId { get; set;  }
-        public Show Show { get; set; }
+        public int ShowId{ get; set; }
+        public int SeatId{ get; set; }
+        public Seat Seat{ get; set; }
+        public Show Show{ get; set; }
+
+        public Ticket(int userId, int showId, int seatId)
+        {
+            this.UserId= userId;
+            this.ShowId = showId;
+            this.SeatId = seatId;
+        }
+
+
     }
 }
